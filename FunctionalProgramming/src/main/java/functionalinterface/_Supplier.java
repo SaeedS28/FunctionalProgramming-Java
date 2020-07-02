@@ -13,5 +13,5 @@ public class _Supplier {
 		return "this is a supplier method tha just returns a particular thing";
 	}
 	
-	static Supplier<String> getASuppliedValue = () -> "this is a supplier function tha just returns a particular thing";
+	static Supplier<String> getASuppliedValue = () -> "this is a supplier function tha just returns a particular thing";	// return any value
 }
