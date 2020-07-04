@@ -1,7 +1,5 @@
 package streams.tutorials;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
@@ -15,5 +13,7 @@ public class AuxMethods {
 		System.out.println(newStreamsSupplier.get().min((int1, int2) -> int1 > int2 ? 1 : -1).get());	// returns the optional with the minimum element based on a comparator
 		System.out.println(newStreamsSupplier.get().max((int1, int2) -> int1 > int2 ? -1 : 1).get());
 		newStreamsSupplier.get().limit(3).forEach(System.out::print);	// truncates the stream to the specified size
+		System.out.println();
+		newStreamsSupplier.get().filter(even -> even % 2 == 0).forEach(System.out::print);
 	}
 }
